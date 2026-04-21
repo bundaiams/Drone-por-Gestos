@@ -48,7 +48,7 @@ void loop() {
     digitalWrite(LED_PIN, HIGH);
 
     // Mixer: combina os 4 eixos para cada motor
-    //        M1(frente-esq)  M2(frente-dir)  M3(trás-dir)  M4(trás-esq)
+    //      M1(frente-esq)  M2(frente-dir)  M3(trás-dir)  M4(trás-esq)
     int m1 = dados.throttle + dados.pitch - dados.roll + dados.yaw;
     int m2 = dados.throttle + dados.pitch + dados.roll - dados.yaw;
     int m3 = dados.throttle - dados.pitch + dados.roll + dados.yaw;
